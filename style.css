@@ -30,10 +30,12 @@ body {
 }
 
 .rules-box {
-    display: none;
     width: 540px;
     background: beige;
     border-radius: 5px;
+    opacity: 0;
+    pointer-events: none;
+    transform: translate(-50%, -50%) scale(1.2);
 }
 
 .rules-box .rules-title {
@@ -98,23 +100,25 @@ body {
     color: white;
 }
 
-.buttons button.retry{
+.buttons button.begin{
     color: black;
     background: white;
 }
 
-.buttons button.retry:hover{
+.buttons button.begin:hover{
     background: green;
     color: white;
 }
 /* Question box */
 .game_box {
-    display: none;
     width: 550px;
     background: beige;
     border-radius: 5px;
+    opacity: 0;
+    pointer-events: none;
+    transform: translate(-50%, -50%) scale(1.2);
 }
-
+/* header */
 .game_box header{
     position: relative;
     z-index: 99;
@@ -132,7 +136,7 @@ body {
     font-size: 20px;
     font-weight: 600;
 }
-
+/* Timer */
 .game_box header .timer{
     display: flex;
     align-items: center;
@@ -162,6 +166,7 @@ body {
     line-height: 30px;
     border-radius: 5px;
     border: 1px solid green;
+    pointer-events: none;
 }
 
 .game_box section{
@@ -280,6 +285,9 @@ footer .next:hover{
     align-items: center;
     flex-direction: column;
     justify-content: space-between;
+    opacity: 0;
+    pointer-events: none;
+    transform: translate(-50%, -50%) scale(1.2);
 }
 
 .final .icon{
@@ -345,7 +353,7 @@ footer .next:hover{
     background: green;
     color: white;
 }
-
+/* Input styling */
 input[type=text] {
     margin: 0 auto;
     height: 40px;

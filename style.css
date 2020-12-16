@@ -12,7 +12,7 @@ body {
     background-image: url(https://assets.thespinoff.co.nz/1/2018/01/Wiki-background.png);
 }
 /* positioning */
-.start-btn, .rules-box, .quest-box {
+.start-btn, .rules-box, .game_box{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -105,9 +105,37 @@ body {
     background: green;
 }
 
-.quest-box{
-    
+.game_box {
+    width: 550px;
+    background: beige;
+    border-radius: 5px;
 }
+
+.game_box header{
+    height: 65px;
+    background: beige;
+    padding: 0 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px 5px 0 0;
+    border-bottom: 1px solid green;
+}
+
+.game_box header .title{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.game_box header .timer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 145px;
+    height: 45px;
+}
+
+
 
 
 

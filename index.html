@@ -6,7 +6,7 @@
     <title>Video Game Quiz</title>
     <link rel="stylesheet" href="style.css">
     <!-- Fontawesome CDN link for icons -->
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <!-- Start quiz button -->
@@ -29,8 +29,47 @@
         <div class="buttons">
             <button class="high-scores">High Scores</button>
             <button class="quit">Exit Quiz</button>
-            <button class="retry">Restart</button>
+            <button class="begin">Enter</button>
         </div>
+    </div>
+    <!-- Questions box -->
+    <div class='quest-box'>
+        <header>
+            <div class="title">It's Game Time!</div>
+            <div class="timer">
+                <div class="time-text">Time Remaining:</div>
+                <div class="time-num">60</div>
+            </div>
+        </header>
+        <section>
+            <div class="quest-tex">
+                <span>Quetiontext</span>
+            </div>
+            <div class="list-choices">
+                <div class="choose">
+                    <span>Answer</span>
+                    <div class="icon tick"><i class="fas fa-check"></i></div>
+                </div>
+                <div class="choose">
+                    <span>Answer</span>
+                    <div class="icon cross"><i class="fas fa-times"></i></div>
+                </div>
+                <div class="choose">
+                    <span>Answer</span>
+                </div>
+                <div class="choose">
+                    <span>Answer</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quiz footer -->
+        <footer>
+            <div class="total">
+                <span><p>1</p>Out Of<p>10</p>Correct</span>
+            </div>
+            <button class="next">Next Level</button>
+        </footer>
     </div>
     
 </body>

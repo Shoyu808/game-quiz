@@ -12,7 +12,7 @@ body {
     background-image: url(https://assets.thespinoff.co.nz/1/2018/01/Wiki-background.png);
 }
 /* positioning */
-.start-btn, .rules-box {
+.start-btn, .rules-box, .quest-box {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -103,6 +103,10 @@ body {
 
 .buttons button.retry:hover{
     background: green;
+}
+
+.quest-box{
+    
 }
 
 

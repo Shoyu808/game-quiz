@@ -109,15 +109,6 @@ var questions = [
     }
 ];
 
-var quizBox = document.getElementById('quiz');
-var resultsBox = document.getElementById('results');
-var submitButton = document.getElementById('submit');
-var timeEl = document.getElementById('timer');
 
-function startQuiz(){};
-
-function quizQuest(){};
-    
-function showResults(){};
 
 

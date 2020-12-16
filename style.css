@@ -85,6 +85,7 @@ body {
 
 .buttons button.high-scores:hover{
     background: green;
+    color: white;
 }
 
 .buttons button.quit{
@@ -94,6 +95,7 @@ body {
 
 .buttons button.quit:hover{
     background: green;
+    color: white;
 }
 
 .buttons button.retry{
@@ -103,6 +105,7 @@ body {
 
 .buttons button.retry:hover{
     background: green;
+    color: white;
 }
 /* Question box */
 .game_box {
@@ -265,9 +268,92 @@ footer .next:hover{
     color: white;
     border-color: cornflowerblue;
 }
-
+/* Score box */
 .final{
-    width: 550px;
+    width: 400px;
     background: beige;
     border-radius: 5px;
+    padding: 20px 30px;
+    border-radius: 5px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
 }
+
+.final .icon{
+    font-size: 100px;
+    color: gold;
+    margin-bottom: 10px;
+}
+
+.final .final-mess{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.final input{
+    background: white;
+    border: 1px solid green;
+    border-radius: 5px;
+    margin: 5px;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.final .final-text span{
+    display: flex;
+    margin: 10px 0;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.final .final-text span p{
+    font-weight: 600;
+    padding: 0 4px;
+}
+
+.final .buttons{
+    display: flex;
+    margin: 20px 0;
+}
+
+.final .buttons button{
+    margin: 0 10px;
+    height: 40px;
+    padding: 0 20px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 5px;
+    border: 1px solid green;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: black;
+}
+
+.final .buttons button.reset{
+    color: black;
+    background: white;
+}
+
+.final .buttons button.reset:hover{
+    background: green;
+    color: white;
+}
+
+.final .buttons button.leave{
+    color: black;
+    background: white;
+
+}
+
+.final .buttons button.leave:hover{
+    background: green;
+    color: white;
+}
+
+
+    

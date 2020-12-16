@@ -117,7 +117,7 @@ var timeEl = document.getElementById('timer');
 function startQuiz(){};
 
 function quizQuest(){};
-
-function showResults(){}
+    
+function showResults(){};
 
 

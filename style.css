@@ -18,7 +18,7 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
 }
-/* Styling start button */
+/* Styling button */
 .start-btn button {
     font-size: 30px;
     font-weight: 750;
@@ -30,6 +30,7 @@ body {
 }
 
 .rules-box {
+    display: none;
     width: 540px;
     background: beige;
     border-radius: 5px;
@@ -64,9 +65,45 @@ body {
 }
 
 .rules-box .buttons button {
-    margin: 0 35px;
-    font-size: 14px;
-    border-color: green;
+    margin: 0 30px;
+    height: 40px;
+    width: 100px;
+    border: 1px solid green;
+    border-radius: 5px;
+    color:black;
+    font-size: 13px;
+    font-weight: 500;
     cursor: pointer;
+    transition: all 0.3s ease;
+    
 }
+/* I couldn't put all the classes togther because for some reason it wont work. */
+.buttons button.high-scores{
+    color: black;
+    background: white;
+}
+
+.buttons button.high-scores:hover{
+    background: green;
+}
+
+.buttons button.quit{
+    color: black;
+    background: white;
+}
+
+.buttons button.quit:hover{
+    background: green;
+}
+
+.buttons button.retry{
+    color: black;
+    background: white;
+}
+
+.buttons button.retry:hover{
+    background: green;
+}
+
+
 

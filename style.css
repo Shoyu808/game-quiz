@@ -293,15 +293,6 @@ footer .next:hover{
     font-weight: 500;
 }
 
-.final input{
-    background: white;
-    border: 1px solid green;
-    border-radius: 5px;
-    margin: 5px;
-    justify-content: space-between;
-    text-align: center;
-}
-
 .final .final-text span{
     display: flex;
     margin: 10px 0;
@@ -355,5 +346,41 @@ footer .next:hover{
     color: white;
 }
 
+input[type=text] {
+    margin: 0 auto;
+    height: 40px;
+    padding: 0 auto;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 5px;
+    border: 0px solid green;
+    transition: all 0.3s ease;
+    color: black;
+    text-align: center;
+    justify-content: space-between;
+  }
+  
+  input[type=submit] {
+    margin: 0 auto;
+    height: 40px;
+    padding: 0 20px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 5px;
+    border: 1px solid green;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: black;
+    justify-content: space-between;
+  }
+
+  input[type=submit]:hover{
+      background: green;
+      color: white;
+  }
 
     

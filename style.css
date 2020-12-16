@@ -112,6 +112,8 @@ body {
 }
 
 .game_box header{
+    position: relative;
+    z-index: 99;
     height: 65px;
     background: beige;
     padding: 0 50px;
@@ -130,12 +132,58 @@ body {
 .game_box header .timer{
     display: flex;
     align-items: center;
+    background: white;
+    border: 1px solid green;
+    border-radius: 5px;
+    padding: 0 8px;
     justify-content: space-between;
     width: 145px;
     height: 45px;
 }
 
+.game_box header .timer .time-text{
+    font-weight: 600;
+    font-size: 15px;
+    user-select: none;
+}
 
+.game_box header .timer .time-num{
+    font-size: 20px;
+    font-weight: 600;
+    background: cornflowerblue;
+    height: 30px;
+    width: 45px;
+    color: white;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 5px;
+    border: 1px solid green;
+}
 
+.game_box section{
+    padding: 25px 30px 20px 30px;
+    background: beige;
+}
+
+.game_box section .quest-tex{
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.game_box section .list-choices{
+    padding: 20px 0;
+    display: block;
+}
+
+.game_box section .list-choices .choose{
+    background: aliceblue;
+    border: 1px solid cornflowerblue;
+    border-radius: 5px;
+    padding: 8px 15px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
 

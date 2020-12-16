@@ -12,7 +12,7 @@ body {
     background-image: url(https://assets.thespinoff.co.nz/1/2018/01/Wiki-background.png);
 }
 /* positioning */
-.start-btn, .rules-box, .game_box{
+.start-btn, .rules-box, .game_box, .final{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -264,4 +264,10 @@ footer .next:hover{
     background: cornflowerblue;
     color: white;
     border-color: cornflowerblue;
+}
+
+.final{
+    width: 550px;
+    background: beige;
+    border-radius: 5px;
 }

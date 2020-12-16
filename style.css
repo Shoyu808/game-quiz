@@ -7,3 +7,66 @@
     box-sizing: border-box;
     font-family:'JetBrains Mono', monospace;
 }
+
+body {
+    background-image: url(https://assets.thespinoff.co.nz/1/2018/01/Wiki-background.png);
+}
+/* positioning */
+.start-btn, .rules-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/* Styling start button */
+.start-btn button {
+    font-size: 30px;
+    font-weight: 750;
+    padding: 15px 30px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.rules-box {
+    width: 540px;
+    background: beige;
+    border-radius: 5px;
+}
+
+.rules-box .rules-title {
+    height: 55px;
+    width: 100%;
+    border-bottom: 1px solid green;
+    display: flex;
+    align-items: center;
+    padding: 0 40px;
+    font-weight: 500;
+}
+
+.rules-box .rules-info {
+    padding: 20px 45px;
+}
+
+.rules-box .rules-info .info{
+    margin: 5px 0;
+    font-size: 18px;
+}
+
+.rules-box .buttons{
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 35px;
+    border-top: 1px solid green
+}
+
+.rules-box .buttons button {
+    margin: 0 35px;
+    font-size: 14px;
+    border-color: green;
+    cursor: pointer;
+}
+

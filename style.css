@@ -18,7 +18,7 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
 }
-/* Styling button */
+/* Styling rules button */
 .start-btn button {
     font-size: 30px;
     font-weight: 750;
@@ -104,8 +104,9 @@ body {
 .buttons button.retry:hover{
     background: green;
 }
-
+/* Question box */
 .game_box {
+    display: none;
     width: 550px;
     background: beige;
     border-radius: 5px;
@@ -177,6 +178,7 @@ body {
 
 .game_box section .list-choices .choose{
     background: aliceblue;
+    font-size: 17px;
     border: 1px solid cornflowerblue;
     border-radius: 5px;
     padding: 8px 15px;
@@ -184,6 +186,82 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 
+.game_box section .list-choices .choose:hover{
+    background: cornflowerblue;
+    color: white;
+    border-color: cornflowerblue;
+}
 
+.list-choices .choose:last-child{
+    margin-bottom: 0px;
+}
+
+.list-choices .choose .icon{
+    height: 26px;
+    width: 26px;
+    border: 2px solid transparent;
+    border-radius: 50%;
+    font-size: 13px;
+    line-height: 24px;
+    text-align: center;
+    pointer-events: none;
+}
+
+.list-choices .choose .icon.tick{
+    color: green;
+    border-color: green;
+    background: beige;
+}
+
+.list-choices .choose .icon.cross{
+    color: red;
+    border-color: red;
+    background: beige;
+}
+
+.game_box footer{
+    height: 60px;
+    width: 100%;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.game_box footer .total span{
+    display: flex;
+    user-select: none;
+}
+
+footer .total span p{
+    font-weight: 500;
+    padding: 0 5px;
+}
+
+footer .total span p:first-child{
+    padding-left: 0px;
+}
+
+footer .next{
+    height: 40px;
+    padding: 0 13px;
+    font-size: 18px;
+    font-weight: 400;
+    border: none;
+    outline: none;
+    color: black;
+    background: aliceblue;
+    border-radius: 5px;
+    border: 1px solid cornflowerblue;
+    cursor: pointer;
+}
+
+footer .next:hover{
+    background: cornflowerblue;
+    color: white;
+    border-color: cornflowerblue;
+}

@@ -109,6 +109,14 @@ var questions = [
     }
 ];
 
+const startBtn = document.querySelector(".start-btn button");
+const rulesBox = document.querySelector(".rules-box");
+const highBtn = rules-box.querySelector(".buttons .high-scores");
+const quitBtn = document.querySelector(".buttons .quit");
+const beginBtn = document.querySelector(".buttons .begin");
+
+
+
 
 
 

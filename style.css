@@ -168,7 +168,7 @@ body {
     border: 1px solid green;
     pointer-events: none;
 }
-
+/* Section for answers on quiz and images */
 .game_box section{
     padding: 25px 30px 20px 30px;
     background: beige;
@@ -230,7 +230,7 @@ body {
     border-color: red;
     background: beige;
 }
-
+/* footer of question box */
 .game_box footer{
     height: 60px;
     width: 100%;

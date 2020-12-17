@@ -10,14 +10,14 @@
 </head>
 <body>
     <!-- Start quiz button -->
-    <div class="start-btn"><button>Let's Begin!</button></div>
+    <div class="start_btn"><button>Let's Begin!</button></div>
 
     <!-- rules box -->
-    <div class="rules-box">
-        <div class="rules-title">
+    <div class="rules_box">
+        <div class="rules_title">
             <span>Just like any Video Game, they're rules to this quiz!</span>
         </div>
-        <div class="rules-info">
+        <div class="rules_info">
             <div class="info">When starting the Video Game Quiz:</div>
             <div class="info">1. You'll have a total of <strong>1 minute</strong> answer questions. But there's a catch to the quiz...</div>
             <div class="info">2. Once question is answered there is no turning back.</div>
@@ -27,7 +27,6 @@
         </div>
         <!-- Various buttons for quiz -->
         <div class="buttons">
-            <button class="high-scores">High Scores</button>
             <button class="quit">Exit Quiz</button>
             <button class="begin">Enter</button>
         </div>
@@ -42,10 +41,10 @@
             </div>
         </header>
         <section>
-            <div class="quest-tex">
-                <span>Questiontext</span>
+            <div class="quest_tex">
+                <!-- <span>Questiontext</span> -->
             </div>
-            <div class="list-choices">
+            <div class="list_choices">
                 <div class="choose">
                     <span>Answer</span>
                     <div class="icon tick"><i class="fas fa-check"></i></div>
@@ -76,10 +75,10 @@
         <div class="icon">
             <i class="fas fa-crown"></i>
         </div>
-        <div class="final-mess">Game Over! Please enter your initials.</div>
+        <div class="final_mess">Game Over! Please enter your initials.</div>
         <input type="text" id="initials" placeholder="Enter Initails"/>
         <input type="submit" id="submit"/>
-        <div class="final-text">
+        <div class="final_text">
             <span>You got <p>1</p> out of <p>10</p>Correct</span>
         </div>
         <div class="buttons">
@@ -88,6 +87,7 @@
         </div>
     </div>
 
+    <script src="java/questions.js"></script>
     <script src="java/script.js"></script>
     
 </body>

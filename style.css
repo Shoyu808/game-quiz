@@ -12,14 +12,22 @@ body {
     background-image: url(https://assets.thespinoff.co.nz/1/2018/01/Wiki-background.png);
 }
 /* positioning */
-.start-btn, .rules-box, .game_box, .final{
+.start_btn, .rules_box, .game_box, .final{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+.rules_box.activeInfo, .game_box.activeGame{
+    z-index: 5;
+    opacity: 1;
+    pointer-events: auto;
+    transform: translate(-50%, -50%) scale(1.25);
+}
+
 /* Styling rules button */
-.start-btn button {
+.start_btn button {
     font-size: 30px;
     font-weight: 750;
     padding: 15px 30px;
@@ -29,16 +37,17 @@ body {
     cursor: pointer;
 }
 
-.rules-box {
+.rules_box {
     width: 540px;
     background: beige;
     border-radius: 5px;
     opacity: 0;
     pointer-events: none;
     transform: translate(-50%, -50%) scale(1.2);
+    transition: all 0.3s ease;
 }
 
-.rules-box .rules-title {
+.rules_box .rules-title {
     height: 55px;
     width: 100%;
     border-bottom: 1px solid green;
@@ -48,16 +57,16 @@ body {
     font-weight: 500;
 }
 
-.rules-box .rules-info {
+.rules_box .rules-info {
     padding: 20px 45px;
 }
 
-.rules-box .rules-info .info{
+.rules_box .rules-info .info{
     margin: 5px 0;
     font-size: 18px;
 }
 
-.rules-box .buttons{
+.rules_box .buttons{
     height: 55px;
     display: flex;
     align-items: center;
@@ -66,8 +75,8 @@ body {
     border-top: 1px solid green
 }
 
-.rules-box .buttons button {
-    margin: 0 30px;
+.rules_box .buttons button {
+    margin: 0 auto;
     height: 40px;
     width: 100px;
     border: 1px solid green;
@@ -77,19 +86,9 @@ body {
     font-weight: 500;
     cursor: pointer;
     transition: all 0.3s ease;
-    
+    outline: none;
 }
 /* I couldn't put all the classes togther because for some reason it wont work. */
-.buttons button.high-scores{
-    color: black;
-    background: white;
-}
-
-.buttons button.high-scores:hover{
-    background: green;
-    color: white;
-}
-
 .buttons button.quit{
     color: black;
     background: white;
@@ -174,7 +173,7 @@ body {
     background: beige;
 }
 
-.game_box section .quest-tex{
+.game_box section .quest_tex{
     font-size: 25px;
     font-weight: 600;
 }
@@ -198,17 +197,17 @@ body {
     transition: all 0.3s ease;
 }
 
-.game_box section .list-choices .choose:hover{
+.game_box section .list_choices .choose:hover{
     background: cornflowerblue;
     color: white;
     border-color: cornflowerblue;
 }
 
-.list-choices .choose:last-child{
+.list_choices .choose:last_child{
     margin-bottom: 0px;
 }
 
-.list-choices .choose .icon{
+.list_choices .choose .icon{
     height: 26px;
     width: 26px;
     border: 2px solid transparent;
@@ -219,13 +218,13 @@ body {
     pointer-events: none;
 }
 
-.list-choices .choose .icon.tick{
+.list_choices .choose .icon.tick{
     color: green;
     border-color: green;
     background: beige;
 }
 
-.list-choices .choose .icon.cross{
+.list_choices .choose .icon.cross{
     color: red;
     border-color: red;
     background: beige;
@@ -296,19 +295,19 @@ footer .next:hover{
     margin-bottom: 10px;
 }
 
-.final .final-mess{
+.final .final_mess{
     font-size: 20px;
     font-weight: 500;
 }
 
-.final .final-text span{
+.final .final_text span{
     display: flex;
     margin: 10px 0;
     font-size: 15px;
     font-weight: 500;
 }
 
-.final .final-text span p{
+.final .final_text span p{
     font-weight: 600;
     padding: 0 4px;
 }

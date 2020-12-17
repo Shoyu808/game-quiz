@@ -5,118 +5,37 @@
 // TODO: When the user answers all the questions or timer reach 0 they'll be presented with their high score
 // TODO: Create a local storage to hold high scores
 
-// My questions of arrays
-var questions = [
-    {
-        text: "When did the Super Nintendo got released?",
-        answer: [
-            "November 21, 1990",
-            "April 15, 1990",
-            "January 3, 1990",
-            "December 5, 1989"
-        ],
-        correctAnwer: 0
-    },
-    {
-        text: "Which gaming console is the best selling?",
-        answer: [
-            "Xbox",
-            "Wii",
-            "PlayStation 2",
-            "PlayStation 5"
-        ],
-        correctAnwer: 2
-    },
-    {
-        text: "Which of these games are first person shooters?",
-        answer: [
-            "Hello kitty Island Adventure",
-            "Golden eye 007",
-            "Final Fantasy",
-            "Grand theft auto"
-        ],
-        correctAnwer: 1
-    },
-    {
-        text: "What does RPG mean?",
-        answer: [
-            "Real pro gamer?",
-            "Running playing game?",
-            "Really playing games?",
-            "Role playing game?"
-        ],
-        correctAnswer: 3
-    },
-    {
-        text: "Who is the main character in Final Fantasy X?",
-        answer: [
-            "Tidus",
-            "Kimahri",
-            "Wakka",
-            "Yuna"
-        ],
-        correctAnswer: 0
-    },
-    {
-        text: "What is the main charater's name in Halo?",
-        answer: [
-            "Master Guardian",
-            "Commaning Chief",
-            "Master Chief",
-            "Commanging Guardian"
-        ],
-        correctAnswer: 2
-    },
-    {
-        text: "What is the first MMORPG?",
-        answer: [
-            "Runescape",
-            "Ultima Online",
-            "Maplestory",
-            "Realm Online"
-        ],
-        correctAnswer: 3
-    },
-    {
-        text: "What is the best selling handheld gaming console of all time?",
-        answer: [
-            "Playstation portable",
-            "Game boy color",
-            "Nintendo Switch",
-            "Nintendo DS"
-        ],
-        correctAnswer: 3
-    },
-    {
-        text: "Who invented the Xbox?",
-        answer: [
-            "Sony",
-            "Microsoft",
-            "Sega",
-            "Atari"
-        ],
-        correctAnswer: 1
-    },
-    {
-        text: "What is the best selling FPS game of all time?",
-        answer: [
-            "Counter-Strike: Global Offensive",
-            "Halo",
-            "Call of duty",
-            "Valorant"
-        ],
-        correctAnswer: 0
-    }
-];
+const start_btn = document.querySelector(".start_btn button");
+const rules_box = document.querySelector(".rules_box");
+const exit_btn = rules_box.querySelector(".buttons .quit");
+const continue_btn = rules_box.querySelector(".buttons .begin");
+const game_box = document.querySelector(".game_box");
 
-const startBtn = document.querySelector(".start-btn button");
-const rulesBox = document.querySelector(".rules-box");
-const highBtn = rules-box.querySelector(".buttons .high-scores");
-const quitBtn = document.querySelector(".buttons .quit");
-const beginBtn = document.querySelector(".buttons .begin");
+// To make the rules box pop up
+start_btn.onclick = ()=>{
+    rules_box.classList.add("activeInfo");
+}
 
+// To hide rules-box if exit button is clicked
+exit_btn.onclick = ()=>{
+    rules_box.classList.remove("activeInfo");
+}
+// if user clicks continue to start quiz
+continue_btn.onclick = ()=>{
+    // hides the rules for quiz
+    rules_box.classList.remove("activeInfo");
+    // Shows quiz
+    game_box.classList.add("activeGame");
+}
 
+let que_count = 0;
 
+// function for question and answer
+function showQuestions(){
+    const quest_tex = document.querySelector(".quest_tex")
+    let que_tag = '<span>'+ questions[0].questions +'</span>';
+    quest_tex.innerHTML = que_tag;
+}
 
 
 
